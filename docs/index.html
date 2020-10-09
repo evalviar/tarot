@@ -55,7 +55,7 @@ button:hover {
 }
 
 #face {
-  height: 40vw;
+  height: 60vw;
   -webkit-transition: 0.5s;
   
 
@@ -83,10 +83,12 @@ button:hover {
 
 <div class="item-c">
   
-    <button type="button" id="button" class="button" onclick="buttonClick()">Card of the Day </button>
+    <button type="button" id="button" class="button" onclick="buttonClick()">&#9825;	
+today's card &#9825;	</button>
   
   <button onclick=location.reload();
->Refresh</button>
+>⁺˚*･༓☾reset☽༓･*˚⁺
+</button>
 
 
 
@@ -299,7 +301,7 @@ var numberGen = Math.floor(chooseRange);
   document.getElementById('card').innerHTML = "Your card is " + cards[numberGen].card + "." + "<br> This card is about " + cards[numberGen].desc;
   document.getElementById('face').src = cards[numberGen].src;
   document.getElementById('button').visibility = 'hidden';   
-  document.getElementById('button').innerHTML = "Get Another Card";
+  document.getElementById('button').innerHTML = "Get another card?";
 
 }
         </script>   
